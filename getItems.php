@@ -16,7 +16,7 @@ function RetrieveItems()
     //echo "\r\ncatalogHost:" . $catalogHost;    
     $catalogRoute = "http://" . $catalogHost;
     //echo "\r\ncatalogRoute:" . $catalogRoute;    
-    $url = $catalogRoute . "/items";
+    $url = $catalogRoute . "/items/v2";
 
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url);
